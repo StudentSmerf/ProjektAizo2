@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "Graf.h"
 using namespace std;
 
 class mainMenu
@@ -7,14 +7,17 @@ class mainMenu
 private:
     /* data */
 public:
-    int main(){
-        mainMenu(/* args */);
+    mainMenu(){
+        Graf graf;
+        int a = graf.getNodes();
+        cout << a;
+        cin >> a;
     }
     
 };
 
-mainMenu::mainMenu(/* args */)
-{
-
+int main(){
+    mainMenu menu;  
 }
+
 
